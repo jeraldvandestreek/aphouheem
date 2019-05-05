@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://geusohchi.woodland-energy.com/sitemap.xml

